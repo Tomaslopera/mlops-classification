@@ -1,0 +1,5 @@
+outs:
+- md5: 730aa9207d43576cdd4968f51c05daff
+  size: 873191
+  hash: md5
+  path: datos_caso_8.csv
