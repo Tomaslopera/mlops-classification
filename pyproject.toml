@@ -1,39 +1,15 @@
-[build-system]
-requires = ["flit_core >=3.2,<4"]
-build-backend = "flit_core.buildapi"
-
 [project]
-name = "mlops_classification"
-version = "0.0.1"
-description = "A short description of the project."
-authors = [
-  { name = "Tomaslopera" },
-]
-license = { file = "LICENSE" }
+name = "mlops-classification"
+version = "0.1.0"
+description = "Add your description here"
 readme = "README.md"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License"
-]
+requires-python = ">=3.11"
 dependencies = [
-    "mkdocs",
-    "pip",
-    "pytest",
-    "python-dotenv",
-    "ruff",
+    "ipykernel>=6.30.1",
+    "joblib>=1.5.2",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.6",
+    "pandas>=2.3.2",
+    "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
 ]
-requires-python = "~=3.10.0"
-
-
-[tool.ruff]
-line-length = 99
-src = ["mlops_classification"]
-include = ["pyproject.toml", "mlops_classification/**/*.py"]
-
-[tool.ruff.lint]
-extend-select = ["I"]  # Add import sorting
-
-[tool.ruff.lint.isort]
-known-first-party = ["mlops_classification"]
-force-sort-within-sections = true
-
