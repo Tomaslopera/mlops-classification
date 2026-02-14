@@ -1,10 +1,86 @@
 # MLOps-Classification
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+This is a **uv, cookiecutter and dvc** setUp for an MLOps project.
 
-A short description of the project.
+## UV
+
+```bash
+pip install uv
+uv init
+uv add package
+uv remove package
+```
+
+## CookieCutter
+
+```bash
+(data) MacBook-Air-de-Tomas-3:MLOps loperatomas410$ ccds
+project_name (project_name): demomlops
+repo_name (demomlops): repomlops
+module_name (demomlops): 
+author_name (Your name (or your organization/company/team)): TomasLopera
+description (A short description of the project.): my first project
+python_version_number (3.10): 3.13
+Select dataset_storage
+    1 - none
+    2 - azure
+    3 - s3
+    4 - gcs
+    Choose from [1/2/3/4] (1): 
+Select environment_manager
+    1 - virtualenv
+    2 - conda
+    3 - pipenv
+    4 - uv
+    5 - pixi
+    6 - poetry
+    7 - none
+    Choose from [1/2/3/4/5/6/7] (1): 4
+Select dependency_file
+    1 - requirements.txt
+    2 - pyproject.toml
+    3 - environment.yml
+    4 - Pipfile
+    5 - pixi.toml
+    Choose from [1/2/3/4/5] (1): 2
+Select pydata_packages
+    1 - none
+    2 - basic
+    Choose from [1/2] (1): 
+Select testing_framework
+    1 - none
+    2 - pytest
+    3 - unittest
+    Choose from [1/2/3] (1): 2
+Select linting_and_formatting
+    1 - ruff
+    2 - flake8+black+isort
+    Choose from [1/2] (1): 
+Select open_source_license
+    1 - No license file
+    2 - MIT
+    3 - BSD-3-Clause
+    Choose from [1/2/3] (1): 
+Select docs
+    1 - mkdocs
+    2 - none
+    Choose from [1/2] (1): 
+Select include_code_scaffold
+    1 - Yes
+    2 - No
+    Choose from [1/2] (1): 2
+```
+
+## DVC
+
+**S3 Bucket:** `dvc[s3]`
+
+```bash
+dvc init
+dvc add data
+dvc add models
+dvc push
+```
 
 ## Project Organization
 
